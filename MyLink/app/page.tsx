@@ -13,7 +13,7 @@ import {
 const links = [
   {
     title: "GitHub",
-    url: "https://github.com/jnieno",
+    url: "https://github.com",
     icon: FaGithub
   },
   {
