@@ -1,0 +1,147 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  background: #f9fafb;
+  color: #111111;
+}
+
+/* 전체 페이지 */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 12px;
+}
+
+/* 마이링크 컨테이너 */
+
+.profile {
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px 16px 48px;
+}
+
+/* 프로필 상단 */
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 28px;
+  stroke-width: 2;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* 링크 목록 */
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 개별 링크 카드 */
+
+.link-card {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 16px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  text-decoration: none;
+  color: #111111;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* 링크 안의 아이콘과 제목 */
+
+.link-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+
+  font-size: 18px;
+}
+
+.brand-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.external-icon {
+  width: 19px;
+  height: 19px;
+  color: #555555;
+}
+
+/* 마우스를 올렸을 때 */
+
+.link-card:hover {
+  background: #f9fafb;
+  border-color: #cbd5e1;
+}
+
+/* 키보드 접근성 */
+
+.link-card:focus-visible {
+  outline: 3px solid #94a3b8;
+  outline-offset: 3px;
+}
+
+/* 모바일 화면 */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 12px 8px;
+  }
+
+  .profile {
+    padding: 36px 14px 40px;
+  }
+
+  .profile-header h1 {
+    font-size: 23px;
+  }
+
+  .link-content {
+    font-size: 16px;
+  }
+}
